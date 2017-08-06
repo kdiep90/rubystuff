@@ -10,3 +10,5 @@ puts formatter % {
   third: "But it didn't sing.",
   fourth: "So I said goodnight."
 }
+
+# This exercise focuses on the use of %{}. In contrast to #{}, I thinnk %{} allows for formatting multiple values. But this is about as much as the exercise is reveals. I don't know if there's more to the story yet.
