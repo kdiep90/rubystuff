@@ -32,3 +32,6 @@ target.write("\n")
 
 puts "And finally, we close it."
 target.close
+
+target = open(filename)
+puts target.read
