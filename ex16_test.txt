@@ -1,7 +1,3 @@
-Test file
-A line.
-Another line.
-Yet another line.
-Some.
-More.
-Lines.
+I'm a new line!
+I'm another new line!
+I'm hungry :(
