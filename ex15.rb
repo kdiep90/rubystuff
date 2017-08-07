@@ -4,7 +4,7 @@ txt = open(filename) # assigns a variable to whatever is in the file called
 puts "Here's your file #{filename}:"
 print txt.read # reads the content of the sample file
 
-print "Type the filename again: "
+print "Type the filename of the file you want to view: "
 file_again = $stdin.gets.chomp #assigns file name given by the user to a variable
 
 txt_again = open(file_again) # assigns a variable to the file given by the user (which may or may not be the same as the first file called)
