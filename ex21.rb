@@ -33,3 +33,9 @@ puts "Here's a puzzle."
 what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 
 puts "That becomes #{what}. Can you do it by hand?"
+
+# What = 35 + (74 - (180 * (125 / 2)))
+# What = 35 + (74 - (180 * 62))
+# What = 35 + (74 - 11,160)
+# What = 35 + (-11,086)
+# What = -11,051
