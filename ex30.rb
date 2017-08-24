@@ -1,6 +1,6 @@
-people = 30
-cars = 40
-trucks = 15
+people = 20
+cars = 20
+trucks = 30
 
 if cars > people
   puts "We should take the cars."
