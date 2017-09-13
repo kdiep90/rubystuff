@@ -31,7 +31,7 @@ if door == "1"
   elsif bear == "2"
     puts "The bear eats your legs off. You slowly bleed out."
   elsif bear == "3"
-    if has_sword == true
+    if has_sword
       puts "You get stabby. Real stabby. The bear doesn't like that. He leaves you alone because you're being mad rude."
     else
       puts "You get stabby. Unfortunately for you, you ain't got nothin' to stab with. The bear mauls you. Mostly because it thinks you're rude."
@@ -45,14 +45,21 @@ elsif door == "2"
   puts "1. Blueberries."
   puts "2. Yellow jacket clothespins."
   puts "3. Understanding revolvers yelling melodies."
+  puts "4. Get stabby."
 
   print "> "
   insanity = $stdin.gets.chomp
 
-  if insanity == "1" || insanity == "2"
-    puts "Your body survives powered by a mind of jello."
-  else
+  if insanity == "4"
+    if has_sword
+      puts "Cthulhu is not amused. You are erased from existence."
+    else
+      puts "You get stabby. With what? Who knows. Cthulhu respects the insanity of your choice and leaves you alone to wreak havok on the world."
+    end
+  elsif insanity == "3"
     puts "The insanity rots your eyes into a pool of muck."
+  else
+    puts "Your body survives powered by a mind of jello."
   end
 
 else
