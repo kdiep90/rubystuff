@@ -14,7 +14,7 @@ change.each {|i| puts "I got #{i}"}
 
 elements = []
 
-(0..5).each do |i|
+(1...10).each do |i|
   puts "adding #{i} to the list."
   elements.push(i)
 end
