@@ -1,15 +1,23 @@
-i = 0
-numbers = []
+def while_loop_function(x)
+  i = 0
+  numbers = []
 
-while i < 6
-  puts "At the top i is #{i}"
-  numbers.push(i)
+  while i < x
+    puts "At the top i is #{i}"
+    numbers.push(i)
 
-  i += 1
-  puts "Numbers now: ", numbers
-  puts "At the bottom i is #{i}"
+    i += 1
+    puts "Numbers now: ", numbers
+    puts "At the bottom i is #{i}"
+  end
+
+  puts "The numbers: "
+
+  numbers.each {|num| puts num}
 end
 
-puts "The numbers: "
+puts "Pick a number."
+print "> "
+input = $stdin.gets.chomp.to_i
 
-numbers.each {|num| puts num}
+while_loop_function(input)
