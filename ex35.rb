@@ -4,7 +4,7 @@ def gold_room
   print "> "
   choice = $stdin.gets.chomp
 
-  if choice.include?("0") || choice.include?("1")
+  if (choice.include? "0") || (choice.include? "1")
     how_much = choice.to_i
   else
     dead("Man, learn to type a number.")
@@ -54,7 +54,7 @@ def cthulhu_room
 
   if choice.include? "flee"
     start
-  elsif choice.include? "head?"
+  elsif choice.include? "head"
     dead("Well that was tasty!")
   else
     cthulhu_room
